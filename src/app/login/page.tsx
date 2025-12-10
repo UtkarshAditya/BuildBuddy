@@ -155,35 +155,6 @@ export default function LoginPage() {
                   Sign up
                 </Link>
               </div>
-
-              <div className="relative my-6">
-                <div className="absolute inset-0 flex items-center">
-                  <div className="w-full border-t border-gray-300 dark:border-gray-700"></div>
-                </div>
-                <div className="relative flex justify-center text-sm">
-                  <span className="px-2 bg-white dark:bg-gray-800 text-muted-foreground">
-                    Quick test login
-                  </span>
-                </div>
-              </div>
-
-              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-3 text-sm">
-                <p className="font-semibold text-blue-900 dark:text-blue-100 mb-1">
-                  Demo Account:
-                </p>
-                <p className="text-blue-700 dark:text-blue-300">
-                  Email:{" "}
-                  <code className="bg-blue-100 dark:bg-blue-900 px-1 rounded">
-                    sarah.chen@example.com
-                  </code>
-                </p>
-                <p className="text-blue-700 dark:text-blue-300">
-                  Password:{" "}
-                  <code className="bg-blue-100 dark:bg-blue-900 px-1 rounded">
-                    password123
-                  </code>
-                </p>
-              </div>
             </form>
           </CardContent>
         </Card>
