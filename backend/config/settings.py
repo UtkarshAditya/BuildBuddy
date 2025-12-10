@@ -153,10 +153,13 @@ AUTH_USER_MODEL = 'users.User'
 # CORS Settings
 # In production, only allow specific origins
 CORS_ALLOW_ALL_ORIGINS = DEBUG  # Only allow all in development
-CORS_ALLOWED_ORIGINS = config(
+
+# Parse CORS origins from environment variable
+cors_origins_str = config(
     'CORS_ALLOWED_ORIGINS',
     default='http://localhost:3000,http://127.0.0.1:3000'
-).split(',')
+)
+CORS_ALLOWED_ORIGINS = [origin.strip() for origin in cors_origins_str.split(',') if origin.strip()]
 
 CORS_ALLOW_CREDENTIALS = True
 
@@ -182,10 +185,12 @@ CORS_ALLOW_METHODS = [
 ]
 
 # CSRF Settings
-CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:3000',
-    'http://127.0.0.1:3000',
-]
+# Parse CSRF origins from environment variable
+csrf_origins_str = config(
+    'CSRF_TRUSTED_ORIGINS',
+    default='http://localhost:3000,http://127.0.0.1:3000'
+)
+CSRF_TRUSTED_ORIGINS = [origin.strip() for origin in csrf_origins_str.split(',') if origin.strip()]
 
 
 # REST Framework Settings
