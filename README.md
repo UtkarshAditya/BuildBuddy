@@ -129,4 +129,4 @@ buildbuddy/
 │   └── manage.py
 └── public/                  # Static files
 ```
-Built with ❤️ for the hackathon community
+

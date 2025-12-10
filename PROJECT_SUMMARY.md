@@ -206,6 +206,3 @@ npm run lint     # Run ESLint
 
 ---
 
-**Your BuildBuddy platform is ready to launch! 🚀**
-
-Open http://localhost:3000 in your browser to explore all the features.
