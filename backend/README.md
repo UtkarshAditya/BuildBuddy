@@ -1,4 +1,4 @@
-# Django Backend - Coming Soon
+
 
 This directory will contain the Django backend for BuildBuddy.
 
